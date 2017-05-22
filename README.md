@@ -17,5 +17,3 @@ In another window, the frontend:
 ```
 > elm reactor
 ```
-# Haskelm-Chat-Server
-# Haskelm-Chat-Server
