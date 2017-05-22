@@ -1,0 +1,37 @@
+Configuring unix-compat-0.4.1.4...
+Building unix-compat-0.4.1.4...
+Preprocessing library unix-compat-0.4.1.4...
+[1 of 9] Compiling System.PosixCompat.Internal.Time ( src\System\PosixCompat\Internal\Time.hs, .stack-work\dist\2672c1f3\build\System\PosixCompat\Internal\Time.o )
+[2 of 9] Compiling System.PosixCompat.Unistd ( src\System\PosixCompat\Unistd.hs, .stack-work\dist\2672c1f3\build\System\PosixCompat\Unistd.o )
+[3 of 9] Compiling System.PosixCompat.Types ( src\System\PosixCompat\Types.hs, .stack-work\dist\2672c1f3\build\System\PosixCompat\Types.o )
+[4 of 9] Compiling System.PosixCompat.User ( .stack-work\dist\2672c1f3\build\System\PosixCompat\User.hs, .stack-work\dist\2672c1f3\build\System\PosixCompat\User.o )
+[5 of 9] Compiling System.PosixCompat.Extensions ( .stack-work\dist\2672c1f3\build\System\PosixCompat\Extensions.hs, .stack-work\dist\2672c1f3\build\System\PosixCompat\Extensions.o )
+[6 of 9] Compiling System.PosixCompat.Time ( src\System\PosixCompat\Time.hs, .stack-work\dist\2672c1f3\build\System\PosixCompat\Time.o )
+[7 of 9] Compiling System.PosixCompat.Temp ( src\System\PosixCompat\Temp.hs, .stack-work\dist\2672c1f3\build\System\PosixCompat\Temp.o )
+[8 of 9] Compiling System.PosixCompat.Files ( .stack-work\dist\2672c1f3\build\System\PosixCompat\Files.hs, .stack-work\dist\2672c1f3\build\System\PosixCompat\Files.o )
+[9 of 9] Compiling System.PosixCompat ( src\System\PosixCompat.hs, .stack-work\dist\2672c1f3\build\System\PosixCompat.o )
+cbits\mktemp.c: In function '_gettemp':
+
+cbits\mktemp.c:107:36:
+     warning: passing argument 2 of '_stat64i32' from incompatible pointer type [-Wincompatible-pointer-types]
+                     rval = _stat(path, &sbuf);
+                                        ^
+
+In file included from cbits\mktemp.c:37:0: 
+C:/Users/Michael/AppData/Local/Programs/stack/x86_64-windows/ghc-7.10.3/mingw/x86_64-w64-mingw32/include/sys/stat.h:101:28: note: expected 'struct _stat64i32 *' but argument is of type 'struct stat *'
+   __CRT_INLINE int __cdecl _stat64i32(const char *_Name,struct _stat64i32 *_Stat)
+                            ^
+
+cbits\mktemp.c:127:32:
+     warning: passing argument 2 of '_stat64i32' from incompatible pointer type [-Wincompatible-pointer-types]
+             } else if (_stat(path, &sbuf))
+                                    ^
+
+In file included from cbits\mktemp.c:37:0: 
+C:/Users/Michael/AppData/Local/Programs/stack/x86_64-windows/ghc-7.10.3/mingw/x86_64-w64-mingw32/include/sys/stat.h:101:28: note: expected 'struct _stat64i32 *' but argument is of type 'struct stat *'
+   __CRT_INLINE int __cdecl _stat64i32(const char *_Name,struct _stat64i32 *_Stat)
+                            ^
+In-place registering unix-compat-0.4.1.4...
+Installing library in
+C:\sr\snapshots\f21484d8\lib\x86_64-windows-ghc-7.10.3\unix-compat-0.4.1.4-GSzvajAFJ206qQW6omovGI
+Registering unix-compat-0.4.1.4...
